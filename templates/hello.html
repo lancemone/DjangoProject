@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--继承base.html，并替换特定block.继承必须放在子页面的开头-->
+{%  extends "base.html" %}
+{%  block mainbody %}
+<p> 继承 bsae.html 文件 </p>
+    <!--变量使用双括号 -->
+    {{ hello }}
+{% endblock %}
+
+</html>

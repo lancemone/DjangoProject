@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+</head>
+<body>
+<form action="/search-post/" method="post">
+    <!--Django提供的防止伪装提交请求的功能。POST方法提交的表格，必须有此标签。-->
+    {% csrf_token %}
+    <input type="text" name="q">
+      <input type="submit" value="Submit">
+</form>
+
+<!--增加一个rlt记号，为表格处理结果预留位置-->
+<p> {{ rlt }} </p>
+
+</body>
+</html>
