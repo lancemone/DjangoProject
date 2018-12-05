@@ -17,5 +17,6 @@ def hello(request):
     # 使用render来替代之前使用的HttpResponse
     return render(request, "hello.html", context)
 
+
 def base(request):
     return render(request, 'base.html')
